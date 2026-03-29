@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Registration Portal</title>
+        <style>
+            body {
+                background-color: skyblue;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+            }
+            .navigation {
+                text-align: center;
+                margin: 10px;
+            }
+            .navigation a {
+                background-color: darkblue;
+                color: white;
+                padding: 10px;
+                margin:5px;
+                border-radius: 10px;
+            }
+            .section {
+                background-color: darkblue;
+                color: white;
+                padding: 20px;
+                margin:20px;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                width: 95vw;
+            }
+            input, select {
+            padding: 8px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: none;
+            }
+            #Submit-btn {
+                background-color: darkblue;
+                color: white;
+                padding: 10px;
+                margin: 5px;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Student Registration Portal</h1>
+        <div class = "navigation">
+            <a href = "#Personal-Info">Personal Information</a>
+            <a href = "#Academic-Details">Academic Details</a>
+            <a href = "#Address-Info">Address Information</a>
+            <a href = "#Account-Credentials">Account Credentials</a>
+        </div>
+    
+        <form>
+            <div id = "Personal-Info" class = "section">
+                <h2>Personal Information</h2>
+                Full Name:
+                <input type = "text">
+                Date of Birth:
+                <input type = "date">
+                Gender:
+                <select>
+                    <option>Select</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+                Email Address:
+                <input type = "email">
+                Mobile Number:
+                <input type = "text">
+            </div>
+
+            <div id = "Academic-Details" class = "section">
+                <h2>Academic Details</h2>
+                Register Number:
+                <input type = "text">
+                Degree Program:
+                <input type = "text">
+                Department:
+                <input type = "text">
+                Year of Study:
+                <input type = "text">
+            </div>
+
+            <div id = "Address-Info" class = "section">
+                <h2>Address Information</h2>
+                Door Number:
+                <input type = "text">
+                Street Name:
+                <input type = "text">
+                City
+                <input type = "text">
+                State:
+                <input type = "text">
+                Pincode:
+                <input type = "text">
+            </div>
+
+            <div id = "Account-Credentials" class = "section">
+                <h2>Account-Credentials</h2>
+                Username:
+                <input type = "text">
+                Password:
+                <input type = "password">
+                Confirm Password:
+                <input type = "password">
+            </div>
+        </form>
+        <button id = "Submit-btn" onclick = "showMessage()">Submit Form</button>
+        <h3>P S N V Sri Sravya, 24BCE2267</h3>
+    </body>
+
+    <script>
+        function showMessage() {
+            alert("Form Submitted Successfully!")
+        }
+    </script>
+</html>
